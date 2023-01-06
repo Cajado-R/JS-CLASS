@@ -14,9 +14,16 @@
 <body>
     <h1>Hello, World!</h1>
     <script>
-        window.alert("Olá pessoa.")
-         window.prompt('Qual o seu nome?')
-        window.confirm("Está gostando de JS?")
+         $luc = window.prompt('Qual o seu nome?')
+         $msg = 'Olá '
+         $msg1 = ' Seja bem vindo '
+         window.alert($msg + $luc + $msg1)
+        $simounao = window.confirm("Está gostando de JS?")
+        if ($simounao ==  true) {
+            window.alert('Fico feliz que esteja gostando, ' + $luc)
+        }else {
+            window.alert('Uma pena, ' + $luc)
+        }
     </script>
 </body>
 </html>
