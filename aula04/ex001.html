@@ -17,12 +17,16 @@
          $luc = window.prompt('Qual o seu nome?')
          $msg = 'Olá '
          $msg1 = ' Seja bem vindo '
-         window.alert($msg + $luc + $msg1)
-        $simounao = window.confirm("Está gostando de JS?")
+         window.alert($msg+',' + $luc + $msg1)
+        $simounao = window.confirm('Está gostando de JS?')
+        var num1 = Number.parseInt(window.prompt('Digite um número: '))
+        var num2 = Number.parseInt(window.prompt('Digite um número: '))
+        var s = num1 + num2 
+        window.alert(`A soma entre ${num1} e ${num2} é igual a ${s}`)
         if ($simounao ==  true) {
-            window.alert('Fico feliz que esteja gostando, ' + $luc)
+            window.alert (`Fico feliz que esteja gostando ${luc}`)
         }else {
-            window.alert('Uma pena, ' + $luc)
+            window.alert('Uma pena,' + $luc)
         }
     </script>
 </body>
