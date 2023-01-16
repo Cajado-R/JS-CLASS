@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            color: white;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes DOM</h1>
+    <p>Resultado</p>
+    <p>Utilizando o <strong>DOM</strong></p>
+    <div id='msg'>Clique</div>
+    <script>
+        //obtendo por ID e realizando alterações
+        var di = window.document.getElementById('msg').innerText = 'Aguardando'
+        //Obtendo elementos por tagname (p, h1, label, etc)
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        // obtive a tagname "P" de número 1 (a contagem assim como em outras linguagens começa em 0)
+        window.document.write('Está escrito: ' + paragrafo.innerText)
+        //caso fosse utilizado o innerHTML ele viria com a formatação do paragrafo completa, como o strong que está inserido lá em cima no documento
+        // por fim imprimi no fim do documento
+        paragrafo.style.color = 'black'
+        //trocando a cor do paragrafo 1
+        var pe = window.document.querySelector('div#msg')
+        // para obter por queryselector se for por classe no query utilizamos "." ao invés de "#". 
+    </script>
+</body>
+</html>
