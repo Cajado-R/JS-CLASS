@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="txvel" id="txvel">Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resposta">
+
+    </div>
+    <script>
+    function calcular(){
+    var txvel = window.document.getElementById('txvel')
+    var resposta = window.document.getElementById('resposta')
+    var vel1 = Number(txvel.value)
+    if (vel1 >= 60){
+        resposta.innerHTML = `Multado!`;
+        resposta.innerHTML += `Dirija sempre com cinto!`;
+    }else{
+        resposta.innerHTML = `Boa Viagem`;
+        resposta.innerHTML += `Dirija sempre com cinto!`;
+    }
+}
+    </script>
+</body>
+</html>
