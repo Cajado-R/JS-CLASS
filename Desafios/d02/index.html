@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looks Like?</title>
+    <link rel="stylesheet" href="./src/estilos/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Bem Vindo
+        </h1>
+    </header>
+    <main>
+
+            <div>
+                <label for="iname">Nome:</label>
+                <input type="text" id="iname" class="name" placeholder="Ex: Lucas">
+                <label for="inumber">Data de Nascimento:</label>
+                <input type="number" id="number" class="number" placeholder="Ex: 1999">
+                <br>
+                <div id="checks">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" id="masc" value="Masculino">
+                    <label for="femn">Feminino</label>
+                    <input type="radio" name="sex" id="femn" value="Feminino">
+                </div>
+                <input type="button" value="Verificar" id="caixadevalidacao" onclick="verificar()">
+            </div>
+            
+            <div id="top">
+                <img id="imagem">
+            </div>
+
+            <div >
+                <p id="msg"></p>
+            </div>
+    </main>
+    <script src="sct.js"></script>
+</body>
+</html>
