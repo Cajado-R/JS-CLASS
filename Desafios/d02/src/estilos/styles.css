@@ -47,5 +47,17 @@ input[type="button"]{
     font-size: 1.3em;
     padding: 8px;
     border-radius: 40px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.76);
 }
 
+input[type="button"]:hover{
+    display: inline-block;
+    transition: 1.3s;
+    background-color: rgb(255, 255, 255);
+
+}
+
+p{
+    font-size: 1em;
+}
